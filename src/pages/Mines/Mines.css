@@ -1,8 +1,0 @@
-.mines-container {
-  display: flex;
-  min-height: 100vh;
-  background-color: grey;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}

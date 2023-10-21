@@ -12,13 +12,15 @@ export default function NavBar(props) {
 
   return (
     <nav className="navbar-container">
-      <Link to="/">Home</Link>&nbsp; | &nbsp;
-      <span> Welcome, {user.name} to Casino-Games!</span>
-      &nbsp; | &nbsp;Balance: {user.balance}
-      &nbsp; | &nbsp;
-      <Link to="" onClick={handleLogOut}>
-        Log Out
-      </Link>
+      <Link to="/">Home</Link>
+      <span> Welcome {user && user.name} to The Affordable-Tech-Store!</span>
+      {user ? (
+        <Link to="" onClick={handleLogOut}>
+          Log Out
+        </Link>
+      ) : (
+        <Link to="/authPage">Log In / SignUp</Link>
+      )}
     </nav>
   );
 }

@@ -20,10 +20,6 @@ const userSchema = new Schema(
       minLength: 3,
       required: true,
     },
-    balance: {
-      type: Number,
-      default: 100,
-    },
   },
   {
     timestamps: true,
