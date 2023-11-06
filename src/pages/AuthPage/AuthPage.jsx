@@ -12,7 +12,7 @@ export default function AuthPage({ setUser }) {
 
   return (
     <main className="auth-main">
-      <h1>Auth Page</h1>
+      <h1>{!toggle ? "Login" : "SignUp"}</h1>
       {toggle ? (
         <div className="auth-wrapper">
           <SignUpForm setUser={setUser} />{" "}
@@ -24,7 +24,7 @@ export default function AuthPage({ setUser }) {
         <div className="auth-wrapper">
           <LoginForm setUser={setUser} />
           <button className="auth-button" onClick={handleToggle}>
-            SignUp
+            Sign-up
           </button>
         </div>
       )}
