@@ -40,7 +40,7 @@ export default function App() {
       <>
         <NavBar user={user} setUser={setUser} items={items} categories={categories} />
         <Routes>
-          <Route path="/" element={<Dashboard items={items} categories={categories} />} />
+          <Route path="/" element={<Dashboard setItems={setItems} items={items} categories={categories} />} />
           <Route path="/cart" element={<Cart items={items} categories={categories} />} />
           <Route path="/authPage" element={<AuthPage setUser={setUser} />} />
         </Routes>

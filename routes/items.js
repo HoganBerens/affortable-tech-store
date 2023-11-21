@@ -4,6 +4,6 @@ const itemsCtrl = require("../controllers/items");
 
 router.get("/getAll", itemsCtrl.getAll);
 
-router.get("/get/:categoryID", itemsCtrl.getByCategory);
+router.get("/getCategory/:id", itemsCtrl.getByCategory);
 
 module.exports = router;
